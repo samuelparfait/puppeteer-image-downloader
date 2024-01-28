@@ -4,7 +4,7 @@
   "description": "Puppeteer",
   "type": "module",
   "scripts": {
-    "dev": "node index",
+    "dev": "node src/index",
     "destroy": "rm -rf images/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

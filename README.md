@@ -10,7 +10,7 @@ This application is meant for **experimentation purposes only**, it allows you t
 
 ## Usage
 
-1. Edit the `index.js` file:
+1. Edit the `index.js` file located in the `src` directory:
 
 - Set the `baseUrl` variable to the website you want to download images from.
 - Optionally, modify the image selection logic if needed.

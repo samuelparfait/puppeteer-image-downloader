@@ -1,2 +1,12 @@
 .cache
-node_modules
+.dist
+
+node_modules/
+coverage/
+
+renovate.json
+package-lock.json
+
+pnpm-lock.yaml
+
+*.env*

@@ -2,15 +2,18 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import chalk from 'chalk';
 
+import { upsertOutDir } from '@/utils';
+
 const log = console.log;
 const success = chalk.green;
-const warning = chalk.magenta;
 
 const baseUrl = 'https://www.example.com';
 const outDir = 'images';
 
 (async () => {
-  log(warning('Processing...'));
+  upsertOutDir(outDir);
+
+  log(success('Processing...'));
 
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();

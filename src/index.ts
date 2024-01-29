@@ -7,11 +7,11 @@ import { upsertOutDir } from '@/utils';
 const log = console.log;
 const success = chalk.green;
 
-const baseUrl = 'https://www.example.com';
+const baseUrl = 'https://www.google.com';
 const outDir = 'images';
 
 (async () => {
-  upsertOutDir(outDir);
+  await upsertOutDir(outDir);
 
   log(success('Processing...'));
 
@@ -28,7 +28,7 @@ const outDir = 'images';
       const extension = matches[1];
       const buffer = await response.buffer();
       fs.writeFileSync(
-        `${outDir}/image-${counter}.${extension}`,
+        `src/${outDir}/image-${counter}.${extension}`,
         buffer,
         'base64'
       );

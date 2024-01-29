@@ -3,6 +3,7 @@
 
 node_modules/
 coverage/
+images/
 
 renovate.json
 package-lock.json

@@ -5,15 +5,12 @@ const log = console.log;
 const success = chalk.green;
 const warning = chalk.yellow;
 
-export function upsertOutDir(outdir: string) {
-  try {
-    if (!fs.existsSync(outdir)) {
-      fs.mkdirSync(`src/${outdir}`);
-      log(success(`Created ${outdir} directory in the 'src' folder.`));
-    }
-  } catch (e) {
-    if (e instanceof Error && e.message.includes('EEXIST')) {
-      log(warning(`--> ${outdir}`));
-    }
+export async function upsertOutDir(outDir: string) {
+  const pathname = `src/${outDir}`;
+
+  if (!fs.existsSync(pathname)) {
+    fs.mkdirSync(pathname);
+    log(success(`${outDir} directory created at ${pathname}.`));
   }
+  log(warning(`--> ${pathname}`));
 }

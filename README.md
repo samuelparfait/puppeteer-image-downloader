@@ -10,7 +10,7 @@ This application is meant for **experimentation purposes only**, it allows you t
 
 ## Usage
 
-1. Edit the `index.js` file located in the `src` directory:
+1. Edit the `index.ts` file located in the `src` directory:
 
 - Set the `baseUrl` variable to the website you want to download images from.
 - Optionally, modify the image selection logic if needed.
@@ -21,7 +21,7 @@ This application is meant for **experimentation purposes only**, it allows you t
 
 ## Configuration (optional)
 
-**Output directory**: The images will be downloaded to a folder named images in the project directory by default. You can change this by modifying the `outDir` variable in `index.js`.
+**Output directory**: The images will be downloaded to a folder named images in the project directory by default. You can change this by modifying the `outDir` variable in `index.ts`.
 
 ## Troubleshooting
 

@@ -7,7 +7,7 @@ import { upsertOutDir } from '@/utils';
 const log = console.log;
 const success = chalk.green;
 
-const baseUrl = 'https://www.google.com';
+const baseUrl = 'https://www.vercel.com';
 const outDir = 'images';
 
 (async () => {
@@ -15,7 +15,7 @@ const outDir = 'images';
 
   log(success('Processing...'));
 
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
   await page.goto(baseUrl, { waitUntil: 'networkidle0' });

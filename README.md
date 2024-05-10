@@ -6,7 +6,7 @@ This application is meant for **experimentation purposes only**, it allows you t
 
 1. Install dependencies:
 
-`pnpm install`
+`bun install`
 
 ## Usage
 
@@ -17,7 +17,7 @@ This application is meant for **experimentation purposes only**, it allows you t
 
 2. Run the application:
 
-`pnpm dev`
+`bun run dev`
 
 ## Configuration (optional)
 
